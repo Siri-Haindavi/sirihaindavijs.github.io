@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <title>Tuxedo Cat Coffee</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Have a sip of coffee and relax">
+  <meta name="keywords" content="coffee, cafe, hot coffee, peace">
+  <link rel="stylesheet" href="cafe.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="headings">
+        <h1>Conestoga Condors!</h1>
+      </div>
+      <img src="Images/Logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li> <a href='index.html'>Menu</a> </li>
+          <li><a href='Aboutus.html'> About Us</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <form id="order_form" name="order_form" action="checkout.html" method="get">
+      <section id="menu">
+        <h2>Menu</h2>
+        <p>Click an item to add it to your order.</p>
+        <ul id="imageList">
+          <li>
+            <figure>
+              <a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="Espresso"
+                  class="pop-out-effect" /></a>
+              <figcaption>Espresso</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="#"><img id="images/latte_info.jpg" src="images/latte.jpg" alt="Latte" /></a>
+              <figcaption>Latte</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="#"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="Cappuccino" /></a>
+              <figcaption>Cappuccino</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="#"><img id="images/coffee_info.jpg" src="images/coffee.jpg" alt="Drip coffee" /></a>
+              <figcaption>Drip coffee</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="#"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="Biscotti" /></a>
+              <figcaption>Biscotti</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="#"><img id="images/scone_info.jpg" src="images/scone.jpg" alt="Scone" /></a>
+              <figcaption>Scone</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section id="your-order">
+        <h2>Your Order</h2>
+
+        <div class="order-selection">
+          <select id="order" name="order" size="6"></select>
+          <button id="remove-item" type="button">Remove from Cart</button>
+        </div>
+        <p id="total">&nbsp;</p>
+
+        <section id="buttons">
+          <input type="button" name="place_order" id="place_order" value="Place Order">
+          <input type="button" name="clear_order" id="clear_order" value="Clear Order">
+        </section>
+      </section>
+
+
+
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; 2023 Conestoga Condors Coffee. All rights reserved.</span>
+      <span>|</span>
+      <a href="privacy.html">Privacy</a>
+      <span>|</span>
+      <a href="terms.html">Terms & Conditions</a>
+      <span>|</span>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

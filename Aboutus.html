@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <title>Tuxedo Cat Coffee</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Have a sip of coffee and relax">
+  <meta name="keywords" content="coffee, cafe, hot coffee, peace">
+  <link rel="stylesheet" href="cafe.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="headings">
+        <h1>Conestoga Condors!</h1>
+
+      </div>
+      <img src="Images/Logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li> <a href='index.html'>Menu</a> </li>
+          <li><a href='Aboutus.html'> About Us</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/Aboutus.jpg" style="width:100%">
+          <div class="text">Conestoga Coffee - Your Second Home!</div>
+        </div>
+
+
+        <div class="mySlides fade">
+          <img src="Images/cafe.jpg" style="width:100%">
+          <div class="text">Conestoga Coffee - Your Second Home!</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="Images/mocha.jpg" style="width:100%">
+          <div class="text">Conestoga Coffee - Your Second Home!</div>
+        </div>
+
+      </div>
+
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <div class="centered-paragraph">
+        <p>
+          Nestled in the heart of the community, Conestoga Coffee Shop is more than just a place to grab your daily
+          cup of joe. It’s a warm, inviting space where the coffee is rich, and the connections are richer. Our
+          mission is to serve not only exquisite brews and bites but also to be a hub for locals and visitors alike to
+          come together.
+
+          Founded by coffee aficionados, we pride ourselves on our artisanal approach. Each bean is selected with
+          care, ethically sourced from the finest small-scale farms across the globe. Our baristas are artists, their
+          latte art a testament to the passion and precision they pour into every cup.
+
+          But we're more than just coffee; we're about connections. We host local music nights, art exhibitions, and
+          community events that showcase the talents within our vibrant town. Conestoga is a place where you can find
+          a friend in a stranger and where every visit brews a story.
+
+          Come in for the coffee, stay for the camaraderie. At Conestoga Coffee Shop, you’re not just a customer;
+          you’re part of the family.</p>
+        <br>
+        <p><strong>Join us today and let’s make memories one cup at a time.</p></strong>
+      </div>
+    </section>
+
+    <section>
+      <div class="book">
+        <h3>Book a Table</h3>
+      </div>
+      <div class="wrapper">
+        <div class="form-container">
+          <form id="bookingForm">
+            <label for="people">Number of Guests:</label>
+            <input type="number" id="people" name="people" min="1" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions" name="instructions"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="image-container">
+          <img src="Images/table.jpg" alt="Table Image" />
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div class="contact-container">
+
+        <div class="contact-info">
+          <h3>Cafe Location</h3>
+          <a href="https://www.google.com/maps/place/299 Doon Valley Dr, Kitchener, ON N2G 4M4" target="_blank">
+            <img src="Images/maps.png" alt="Location Map" class="map-image">
+          </a>
+          <p><strong>Address:</strong> 299 Doon Valley Dr, Kitchener, ON N2G 4M4 </p>
+          <p><strong>Phone:</strong> +1 900-000-0000</p>
+          <p><strong>Email:</strong> <a href="mailto:info@dummycondors.com">info@dummycondors.com</a></p>
+        </div>
+
+        <div class="hours-info">
+          <h3>Opening Hours</h3>
+          <table>
+            <tr>
+              <th>Monday</th>
+              <td>9:00 AM - 7:00 PM</td>
+            </tr>
+            <tr>
+              <th>Tuesday</th>
+              <td>9:00 AM - 7:00 PM</td>
+            </tr>
+            <tr>
+              <th>Wednesday</th>
+              <td>9:00 AM - 7:00 PM</td>
+            </tr>
+            <tr>
+              <th>Thursday</th>
+              <td>9:00 AM - 7:00 PM</td>
+            </tr>
+            <tr>
+              <th>Friday</th>
+              <td>9:00 AM - 7:00 PM</td>
+            </tr>
+            <tr>
+              <th>Saturday</th>
+              <td>10:00 AM - 7:00 PM</td>
+            </tr>
+            <tr>
+              <th>Sunday</th>
+              <td>10:00 AM - 7:00 PM</td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <span>&copy; 2023 Conestoga Condors Coffee. All rights reserved.</span>
+        <span>|</span>
+        <a href="privacy.html">Privacy</a>
+        <span>|</span>
+        <a href="terms.html">Terms & Conditions</a>
+        <span>|</span>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
