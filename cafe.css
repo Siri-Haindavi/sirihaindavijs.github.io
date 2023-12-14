@@ -11,7 +11,7 @@ header {
   height: 90px;
   z-index: 1000;
   padding-bottom: 8px;
-  border-bottom: 3px solid #DAA520;
+  border-bottom: 3px solid #daa520;
 }
 
 .nav-container {
@@ -75,7 +75,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:active {
-  color: #DAA520;
+  color: #daa520;
 }
 
 main {
@@ -176,7 +176,7 @@ main {
 /* Active dot style */
 .active,
 .dot:hover {
-  background-color: #DAA520;
+  background-color: #daa520;
 }
 
 .centered-paragraph {
@@ -241,7 +241,7 @@ input,
 textarea,
 button {
   padding: 10px;
-  border: 1px solid #FFF8E1;
+  border: 1px solid #fff8e1;
   border-radius: 4px;
   width: 60%;
   cursor: pointer;
@@ -254,14 +254,13 @@ button {
   width: 10rem;
 }
 button:hover {
-  background-color: #DAA520;
+  background-color: #daa520;
   transition: 0.5s;
 }
 
-
 .site-footer {
   background-color: #392919;
-  color: #FFF8E1;
+  color: #fff8e1;
   text-align: center;
   padding: 20px 0;
   font-size: 0.8em;
@@ -275,14 +274,14 @@ button:hover {
 }
 
 .site-footer a {
-  color: #FFF8E1;
+  color: #fff8e1;
   text-decoration: none;
   margin: 0 10px;
 }
 
 .site-footer a:hover {
   text-decoration: underline;
-  color: #DAA520;
+  color: #daa520;
 }
 
 .site-footer span {
@@ -328,7 +327,7 @@ button:hover {
 }
 
 .hours-info th {
-  background-color: #FFF8E1;
+  background-color: #fff8e1;
 }
 
 h3 {
@@ -373,12 +372,11 @@ ul li {
   width: 35%;
   font-size: 0.8rem;
   background-color: #392919;
-  color: #FFF8E1;
+  color: #fff8e1;
   border: 1px solid #000;
-  
 }
-#remove-item:hover{
-  background-color: #DAA520;
+#remove-item:hover {
+  background-color: #daa520;
 }
 
 #total {
@@ -394,26 +392,26 @@ input {
   color: #392919;
   width: 50%;
 }
-#clear_order{
+#clear_order {
   margin-top: 0;
-  color: #FFF8E1;
+  color: #fff8e1;
   background-color: #392919;
   border: 1px solid #000;
 }
-#clear_order:hover{
-  transition : 0.5s;
-  background-color: #DAA520;
+#clear_order:hover {
+  transition: 0.5s;
+  background-color: #daa520;
 }
 
-#place_order{
+#place_order {
   margin-top: 0;
-  color: #FFF8E1;
+  color: #fff8e1;
   background-color: #392919;
   border: 1px solid #000;
 }
-#place_order:hover{
-  transition : 0.5s;
-  background-color: #DAA520;
+#place_order:hover {
+  transition: 0.5s;
+  background-color: #daa520;
 }
 
 #imageList img {
@@ -532,6 +530,7 @@ figcaption {
   }
 }
 
+/*Mobile Devices*/
 @media (max-width: 480px) {
   header,
   .nav-container,
@@ -579,7 +578,6 @@ figcaption {
   }
 }
 
-#logo{
-  
+#logo {
   mix-blend-mode: multiply;
 }
