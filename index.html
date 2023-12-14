@@ -17,7 +17,7 @@
       <div class="headings">
         <h1>Conestoga Condors!</h1>
       </div>
-      <img src="images/logo.png" alt="Logo" class="logo">
+      <img src="Images/Logo.png" alt="Logo" class="logo">
       <nav>
         <ul>
           <li> <a href='index.html'>Menu</a> </li>
@@ -28,55 +28,57 @@
   </header>
   <main>
     <form id="order_form" name="order_form" action="checkout.html" method="get">
+      <div class="container">
       <section id="menu">
         <h2>Menu</h2>
         <p>Click an item to add it to your order.</p>
+        <div class="menu-wrapper">
         <ul id="imageList">
           <li>
             <figure>
-              <a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="Espresso"
-                  class="pop-out-effect" /></a>
-              <figcaption>Espresso</figcaption>
+              <a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="Espresso"/></a>
+              <figcaption>Espresso - <span class="price">$1.95</span> </figcaption>
             </figure>
           </li>
           <li>
             <figure>
               <a href="#"><img id="images/latte_info.jpg" src="images/latte.jpg" alt="Latte" /></a>
-              <figcaption>Latte</figcaption>
+              <figcaption>Latte - <span class="price">$2.95</span> </figcaption>
             </figure>
           </li>
           <li>
             <figure>
               <a href="#"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="Cappuccino" /></a>
-              <figcaption>Cappuccino</figcaption>
+              <figcaption>Cappuccino - <span class="price">$3.45</span> </figcaption>
             </figure>
           </li>
           <li>
             <figure>
               <a href="#"><img id="images/coffee_info.jpg" src="images/coffee.jpg" alt="Drip coffee" /></a>
-              <figcaption>Drip coffee</figcaption>
+              <figcaption>Drip coffee - <span class="price">$1.75</span> </figcaption>
             </figure>
           </li>
           <li>
             <figure>
               <a href="#"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="Biscotti" /></a>
-              <figcaption>Biscotti</figcaption>
+              <figcaption>Biscotti - <span class="price">$1.95</span> </figcaption>
             </figure>
           </li>
           <li>
             <figure>
               <a href="#"><img id="images/scone_info.jpg" src="images/scone.jpg" alt="Scone" /></a>
-              <figcaption>Scone</figcaption>
+              <figcaption>Scone - <span class="price">$2.95</span> </figcaption>
             </figure>
           </li>
         </ul>
+      </div>
       </section>
-
       <section id="your-order">
         <h2>Your Order</h2>
 
         <div class="order-selection">
-          <select id="order" name="order" size="6"></select>
+          <select id="order" name="order" size="10"></select> 
+          <br> <br>
           <button id="remove-item" type="button">Remove from Cart</button>
         </div>
         <p id="total">&nbsp;</p>
@@ -87,7 +89,7 @@
         </section>
       </section>
 
-
+    </div>
 
     </form>
   </main>

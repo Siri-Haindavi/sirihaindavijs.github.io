@@ -244,6 +244,7 @@ button {
   border: 1px solid #ddd;
   border-radius: 4px;
   width: 80%;
+  cursor: pointer;
 }
 button {
   background-color: #5cb85c;
@@ -331,24 +332,27 @@ h3 {
   color: #0b0b0b;
 }
 
+/*Menu Page*/
+
 select {
   width: 350px;
 }
+
 #menu h2 {
   padding-top: 1em;
   padding-left: 1rem;
 }
+
 #menu p {
   margin-top: 0;
   margin-bottom: 0.7em;
   padding-left: 1rem;
 }
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 1rem;
-  white-space: nowrap;
-  overflow-x: auto;
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 ul li {
@@ -358,26 +362,12 @@ ul li {
   vertical-align: top;
 }
 
-#menu figure {
-  margin: 0;
-}
-
-#menu figcaption {
-  margin-top: 5px;
-}
-
 #your-order h2 {
-  padding-left: 1rem;
-}
-
-.order-selection {
-  position: relative;
-  display: inline-block;
-  padding-left: 1rem;
+  padding-top: 5rem;
 }
 
 #remove-item {
-  width: 30%;
+  width: 40%;
   font-size: 0.8rem;
   background-color: #e1e1e1;
   color: #0b0b0b;
@@ -387,17 +377,15 @@ ul li {
 #total {
   margin-top: 0.5em;
   margin-bottom: 0.7em;
-  padding-left: 1rem;
 }
 input {
-  width: 150px;
   margin-right: 5px;
-  padding-left: 1rem;
 }
 #buttons {
   margin-top: 0;
-  padding-left: 1rem;
   padding-top: 1rem;
+  color: #0b0b0b;
+  width: 50%;
 }
 
 #imageList img {
@@ -408,62 +396,74 @@ input {
   transform: scale(1.2);
 }
 
-/* Tablet Styles */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  header {
-    height: 70px;
-  }
-
-  .logo {
-    max-height: 70px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  nav ul li a {
-    font-size: 8px;
-  }
-
-  .wrapper,
-  .contact-container {
-    padding: 10px;
-    margin: 10px auto;
-  }
-
-  .form-container,
-  .image-container,
-  .contact-info,
-  .hours-info {
-    padding: 10px;
-  }
-
-  .site-footer .container {
-    flex-direction: column;
-  }
-
-  .site-footer a,
-  .site-footer span {
-    margin: 5px 0;
-  }
-
-  button,
-  input[type="button"],
-  input[type="submit"] {
-    padding: 12px 15px;
-    font-size: 1rem;
-  }
-
-  input,
-  textarea {
-    padding: 8px;
-    font-size: 0.9rem;
-  }
+.thank {
+  text-align: center;
 }
 
-/* Mobile Styles */
-@media screen and (max-width: 767px) {
+.thanks {
+  width: 20%;
+  height: auto;
+  position: relative;
+}
+
+.menu-wrapper {
+  max-width: 80%;
+  margin-left: 18px;
+  border: 1px solid #636363;
+  padding: 10px;
+}
+
+#imageList figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#menu {
+  flex: 1;
+  padding: 10px;
+}
+
+#imageList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#imageList li {
+  width: 200px;
+}
+
+#imageList img {
+  width: 100%;
+  height: auto;
+}
+
+#menu,
+#your-order {
+  flex-basis: 30%;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Tablet devices (devices with widths between 481px and 768px) */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+
   .nav-container {
     flex-direction: column;
   }
@@ -471,60 +471,82 @@ input {
   .logo {
     position: static;
     transform: none;
-    margin: 10px auto;
+    margin: 10px 0;
   }
 
   nav ul {
-    justify-content: center;
+    flex-direction: column;
+    margin-right: 0;
     margin-top: 10px;
   }
 
   nav ul li {
     margin: 5px 0;
   }
-
-  .wrapper,
-  .contact-container {
+  .container {
     flex-direction: column;
   }
 
-  .form-container,
-  .image-container,
-  .contact-info,
-  .hours-info {
-    width: auto;
+  #menu,
+  #your-order {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
   }
 
-  .site-footer .container {
+  #imageList {
+    justify-content: center;
+  }
+
+  #imageList li {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  header,
+  .nav-container,
+  nav ul {
     flex-direction: column;
+    align-items: center;
   }
 
-  .site-footer a,
-  .site-footer span {
+  nav ul {
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    width: 100%;
     margin: 5px 0;
   }
-  button,
-  input[type="button"],
-  input[type="submit"] {
-    width: 100%;
-    padding: 15px 20px;
-    font-size: 1.1rem;
+
+  .logo {
+    position: static;
+    transform: none;
+    margin-top: 10px;
   }
 
-  input,
-  textarea {
-    padding: 10px;
-    font-size: 1rem;
+  #menu h2,
+  #menu p,
+  #your-order h2 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .menu-wrapper,
+  #your-order {
     width: 100%;
+    margin: 0;
+  }
+
+  #imageList li {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   #imageList img {
-    width: 100%;
-    height: auto;
-    transform: none;
-  }
-
-  .text {
-    font-size: 2em;
+    transition: none;
   }
 }
