@@ -138,7 +138,7 @@ function showSlides(n) {
 
   // Clear the previous timer and start a new one
   clearTimeout(timer);
-  timer = setTimeout(function () { showSlides(slideIndex += 1); }, 5000);
+  timer = setTimeout(function () { showSlides(slideIndex += 1); }, 5000); // Change image every 4 seconds
 }
 
 function currentSlide(n) {

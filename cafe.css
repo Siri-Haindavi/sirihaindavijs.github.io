@@ -1,7 +1,7 @@
 body {
   font-family: "Arial", sans-serif;
-  background-color: #fefcfc;
-  color: #333;
+  background-color: #fffcf4;
+  color: #392919;
 }
 
 header {
@@ -11,7 +11,7 @@ header {
   height: 90px;
   z-index: 1000;
   padding-bottom: 8px;
-  border-bottom: 3px solid rgb(225, 98, 76);
+  border-bottom: 3px solid #DAA520;
 }
 
 .nav-container {
@@ -43,7 +43,7 @@ h1 {
 
 h1 {
   font-size: 1.8rem;
-  color: #1f1f1f;
+  color: #392919;
   line-height: 1.2;
   margin-left: 2em;
 }
@@ -65,7 +65,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: underline;
-  color: #1f1f1f;
+  color: #392919;
   font-size: 15px;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -75,7 +75,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:active {
-  color: #f83838;
+  color: #DAA520;
 }
 
 main {
@@ -167,7 +167,7 @@ main {
   height: 10px;
   width: 10px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #392919;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -176,7 +176,7 @@ main {
 /* Active dot style */
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #DAA520;
 }
 
 .centered-paragraph {
@@ -241,25 +241,27 @@ input,
 textarea,
 button {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #FFF8E1;
   border-radius: 4px;
-  width: 80%;
+  width: 60%;
   cursor: pointer;
 }
 button {
-  background-color: #5cb85c;
+  background-color: #392919;
   color: white;
   border: none;
   cursor: pointer;
-  width: 15rem;
+  width: 10rem;
 }
 button:hover {
-  background-color: #4cae4c;
+  background-color: #DAA520;
+  transition: 0.5s;
 }
 
+
 .site-footer {
-  background-color: #585454;
-  color: #fff;
+  background-color: #392919;
+  color: #FFF8E1;
   text-align: center;
   padding: 20px 0;
   font-size: 0.8em;
@@ -273,13 +275,14 @@ button:hover {
 }
 
 .site-footer a {
-  color: #fff;
+  color: #FFF8E1;
   text-decoration: none;
   margin: 0 10px;
 }
 
 .site-footer a:hover {
   text-decoration: underline;
+  color: #DAA520;
 }
 
 .site-footer span {
@@ -319,17 +322,17 @@ button:hover {
 
 .hours-info th,
 .hours-info td {
-  border: 1px solid #000;
+  border: 1px solid #392919;
   padding: 8px;
   text-align: left;
 }
 
 .hours-info th {
-  background-color: #f2f2f2;
+  background-color: #FFF8E1;
 }
 
 h3 {
-  color: #0b0b0b;
+  color: #392919;
 }
 
 /*Menu Page*/
@@ -367,11 +370,15 @@ ul li {
 }
 
 #remove-item {
-  width: 40%;
+  width: 35%;
   font-size: 0.8rem;
-  background-color: #e1e1e1;
-  color: #0b0b0b;
+  background-color: #392919;
+  color: #FFF8E1;
   border: 1px solid #000;
+  
+}
+#remove-item:hover{
+  background-color: #DAA520;
 }
 
 #total {
@@ -384,16 +391,37 @@ input {
 #buttons {
   margin-top: 0;
   padding-top: 1rem;
-  color: #0b0b0b;
+  color: #392919;
   width: 50%;
+}
+#clear_order{
+  margin-top: 0;
+  color: #FFF8E1;
+  background-color: #392919;
+  border: 1px solid #000;
+}
+#clear_order:hover{
+  transition : 0.5s;
+  background-color: #DAA520;
+}
+
+#place_order{
+  margin-top: 0;
+  color: #FFF8E1;
+  background-color: #392919;
+  border: 1px solid #000;
+}
+#place_order:hover{
+  transition : 0.5s;
+  background-color: #DAA520;
 }
 
 #imageList img {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 #imageList img:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .thank {
@@ -549,4 +577,9 @@ figcaption {
   #imageList img {
     transition: none;
   }
+}
+
+#logo{
+  
+  mix-blend-mode: multiply;
 }
